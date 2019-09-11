@@ -908,22 +908,22 @@
     .line 466
     new-instance v7, Landroid/content/IntentFilter;
 
-    const-string v0, "android.intent.action.SCREEN_OFF"
+    const-string v0, "android.intent.action.SCREEN_OFFA"
 
     invoke-direct {v7, v0}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
 
     .line 467
-    const-string v0, "android.intent.action.SCREEN_ON"
+    const-string v0, "android.intent.action.SCREEN_ONA"
 
     invoke-virtual {v7, v0}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 468
-    const-string v0, "android.intent.action.USER_PRESENT"
+    const-string v0, "android.intent.action.USER_PRESENTA"
 
     invoke-virtual {v7, v0}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 469
-    const-string v0, "android.intent.action.USER_SWITCHED"
+    const-string v0, "android.intent.action.USER_SWITCHEDA"
 
     invoke-virtual {v7, v0}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
