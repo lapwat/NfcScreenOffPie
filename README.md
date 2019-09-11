@@ -1,3 +1,4 @@
+```sh
 smali a -o classes.dex NfcNci/
 rm -rf unzipped
 unzip NfcNci_bak.apk -d unzipped
@@ -13,3 +14,4 @@ su
 cd /system/app/NfcNci
 busybox mount -o remount,rw $PWD
 cp /sdcard/NfcNci_align.apk NfcNci.apk
+```
