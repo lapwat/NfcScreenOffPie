@@ -37,4 +37,8 @@ chmod 644 NfcNci.apk
 
 Java versions of smali files for reverse-engineering
 
-https://android.googlesource.com/platform/packages/apps/Nfc/+/refs/tags/android-9.0.0_r48/src/com/android/nfc
+https://android.googlesource.com/platform/packages/apps/Nfc/+/refs/tags/android-9.0.0_r48/src/com/android/nfc/
+
+Big up to Lasse Hyldahl Jensen his version for Android N
+
+https://lasse-it.dk/2017/01/how-to-modifying-nfcnci-apk-to-run-when-screen-is-turned-off-on-android-nougat/
