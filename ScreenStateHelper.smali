@@ -29,7 +29,7 @@
 
 # direct methods
 .method constructor <init>(Landroid/content/Context;)V
-    .registers 3
+    .locals 1
 
     .line 26
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -64,24 +64,24 @@
 .end method
 
 .method static screenStateToString(I)Ljava/lang/String;
-    .registers 2
+    .locals 1
 
     .line 51
     const/4 v0, 0x1
 
-    if-eq p0, v0, :cond_19
+    if-eq p0, v0, :cond_3
 
     const/4 v0, 0x2
 
-    if-eq p0, v0, :cond_16
+    if-eq p0, v0, :cond_2
 
     const/4 v0, 0x4
 
-    if-eq p0, v0, :cond_13
+    if-eq p0, v0, :cond_1
 
     const/16 v0, 0x8
 
-    if-eq p0, v0, :cond_10
+    if-eq p0, v0, :cond_0
 
     .line 61
     const-string p0, "UNKNOWN"
@@ -89,25 +89,25 @@
     return-object p0
 
     .line 57
-    :cond_10
+    :cond_0
     const-string p0, "ON_UNLOCKED"
 
     return-object p0
 
     .line 55
-    :cond_13
+    :cond_1
     const-string p0, "ON_LOCKED"
 
     return-object p0
 
     .line 53
-    :cond_16
+    :cond_2
     const-string p0, "OFF_LOCKED"
 
     return-object p0
 
     .line 59
-    :cond_19
+    :cond_3
     const-string p0, "OFF_UNLOCKED"
 
     return-object p0
@@ -116,7 +116,7 @@
 
 # virtual methods
 .method checkScreenState()I
-    .registers 2
+    .locals 1
 
     .line 34
     iget-object v0, p0, Lcom/android/nfc/ScreenStateHelper;->mPowerManager:Landroid/os/PowerManager;
@@ -125,7 +125,7 @@
 
     move-result v0
 
-    if-nez v0, :cond_14
+    if-nez v0, :cond_1
 
     .line 35
     iget-object v0, p0, Lcom/android/nfc/ScreenStateHelper;->mKeyguardManager:Landroid/app/KeyguardManager;
@@ -134,36 +134,36 @@
 
     move-result v0
 
-    if-eqz v0, :cond_12
+    if-eqz v0, :cond_0
 
     .line 36
-    const/16 v0, 0x8
+    const/4 v0, 0x2
 
     return v0
 
     .line 38
-    :cond_12
-    const/16 v0, 0x8
+    :cond_0
+    const/4 v0, 0x1
 
     return v0
 
     .line 40
-    :cond_14
+    :cond_1
     iget-object v0, p0, Lcom/android/nfc/ScreenStateHelper;->mKeyguardManager:Landroid/app/KeyguardManager;
 
     invoke-virtual {v0}, Landroid/app/KeyguardManager;->isKeyguardLocked()Z
 
     move-result v0
 
-    if-eqz v0, :cond_1e
+    if-eqz v0, :cond_2
 
     .line 41
-    const/16 v0, 0x8
+    const/4 v0, 0x4
 
     return v0
 
     .line 43
-    :cond_1e
+    :cond_2
     const/16 v0, 0x8
 
     return v0
