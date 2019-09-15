@@ -1,5 +1,2 @@
 NfcNci/*
-!NfcNci/smali/com/android/nfc/NfcService.smali
-!NfcNci/smali/com/android/nfc/ScreenStateHelper.smali
-
 *.apk

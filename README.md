@@ -28,6 +28,11 @@ This is the part where you reverse engineer the source code of the app by modify
 
 For NfcNci, apply [those changes](https://github.com/lapwat/NfcScreenOffPie/commit/42df7a757535490f6219ded761f42e0120031033).
 
+Files to edit are located at:
+- NfcNci/smali/com/android/nfc/NfcService.smali
+- NfcNci/smali/com/android/nfc/ScreenStateHelper.smali
+
+
 # Compile process
 
 ```sh
