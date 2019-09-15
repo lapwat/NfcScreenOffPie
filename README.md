@@ -26,7 +26,7 @@ $ apktool d -f NfcNci.apk -o NfcNci/
 
 This is the part where you reverse engineer the source code of the app by modifying smali files.
 
-For NfcNci, apply [those changes](https://github.com/lapwat/NfcScreenOffPie/commit/e917ac91b072178ff1ffece25a196c3b5686f1d0).
+For NfcNci, apply [those changes](https://github.com/lapwat/NfcScreenOffPie/commit/42df7a757535490f6219ded761f42e0120031033).
 
 # Compile process
 
