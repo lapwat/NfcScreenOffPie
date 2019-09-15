@@ -4,10 +4,9 @@
 - smali / baksmali v2.3+
 - zip / unzip
 - zipalign
+- jarsigner
 
 Enable ADB on phone in developper options.
-
-Take a look at `.sh` files to actually see what they do before executing them.
 
 # Decompile process
 
@@ -90,6 +89,6 @@ Big up to Lasse Hyldahl Jensen for his version for Android N
 
 https://lasse-it.dk/2017/01/how-to-modifying-nfcnci-apk-to-run-when-screen-is-turned-off-on-android-nougat/
 
-Script that helped me understand the signing process
+Understanding the signing process
 
 https://reverseengineering.stackexchange.com/a/9185
