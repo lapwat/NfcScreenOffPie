@@ -17,4 +17,4 @@ cp classes.dex unzipped
 zip -r NfcNci_modded.apk unzipped/*
 
 # align
-zipalign -v 4 NfcNci.apk NfcNci_align.apk
+zipalign -v 4 NfcNci_modded.apk NfcNci_align.apk

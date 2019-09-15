@@ -6,20 +6,30 @@
 
 Enable ADB on phone in developper options.
 
-# Copy NfcNci app and decompile code
+Take a look at `.sh` files to actually see what they do before executing them.
+
+# Copy NfcNci APK and decompile code
 
 ```sh
 $ ./decompile.sh
 ```
 
-# Create new APK (NfcNci_align.apk)
+# Mod source code
+
+This is the part where you reverse engineer the source code of the app by modifying smali files.
+
+```sh
+# modifying smali files
+```
+
+# Compile then align modded APK
 
 ```sh
 $ ./compile.sh
 # output file is tmp/NfcNci_align.apk
 ```
 
-# Manual commands to copy NfcNci_align back on your phone
+# Commands to set up modded APK on your phone
 
 ```sh
 adb push tmp/NfcNci_align.apk /sdcard/
@@ -30,6 +40,22 @@ su
 cd /system/app/NfcNci
 busybox mount -o remount,rw $PWD
 cp /sdcard/NfcNci_align.apk NfcNci.apk
+chmod 644 NfcNci.apk
+```
+
+# Something went wrong?
+
+You can restore the original APK file at any time with those commands.
+
+```sh
+adb push tmp/NfcNci_bak.apk /sdcard/
+adb shell
+
+# android shell
+su
+cd /system/app/NfcNci
+busybox mount -o remount,rw $PWD
+cp /sdcard/NfcNci_bak.apk NfcNci.apk
 chmod 644 NfcNci.apk
 ```
 
