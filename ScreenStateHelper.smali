@@ -137,13 +137,13 @@
     if-eqz v0, :cond_0
 
     .line 36
-    const/4 v0, 0x2
+    const/16 v0, 0x8
 
     return v0
 
     .line 38
     :cond_0
-    const/4 v0, 0x1
+    const/16 v0, 0x8
 
     return v0
 
@@ -158,7 +158,7 @@
     if-eqz v0, :cond_2
 
     .line 41
-    const/4 v0, 0x4
+    const/16 v0, 0x8
 
     return v0
 
